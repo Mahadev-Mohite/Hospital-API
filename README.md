@@ -2,10 +2,6 @@
 
 To run this application on your local machine, please follow these steps:
 
-* Clone this repository:
-```
-https://github.com/rajeevkrS/Hospital-API
-```
 
 * Install the required dependencies using the following command:
 ```
@@ -19,7 +15,7 @@ npm start
 
 * Open the application in your postman app by visiting the following URL: 
 ```
-http://localhost:8000
+http://localhost:5000
 ```
 
 ### Features:
