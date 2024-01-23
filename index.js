@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const dotenv = require('dotenv');
+dotenv.config()
 const port = 5000;
 const db = require('./config/mongoose')
 
@@ -16,7 +17,7 @@ app.use(passport.initialize());
 // Use express router
 app.use('/', require('./routes/index'))
 
-app.listen(port, function (error) {
+app.listen(process.env.port || 5000, function (error) {
     if (error) {
         console.log(`Error in running the Server. Error is : ${error}`);
         return;
